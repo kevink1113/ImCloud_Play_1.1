@@ -11,10 +11,10 @@ const StyledInfluencer = styled.div`
 `;
 
 const InfluencerContainer = styled.div`
-	max-width: 220px;
+	max-width: 300px;
 	margin: 1rem;
 	img {
-		width: 220px;
+		width: 300px;
 	}
 `;
 const ListContainer = styled.div`
