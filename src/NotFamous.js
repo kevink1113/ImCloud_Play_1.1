@@ -85,7 +85,7 @@ class NotFamous extends React.Component {
 	render() {
 		return (
 			<StyledInfluencer>
-				<h1>이런 사람들도 있어요~</h1>
+				<h1>이런 사람들도 있어요</h1>
 				<ImageContainer>
 					{this.state.PhotoData.map((contact, i) => {
 						return (

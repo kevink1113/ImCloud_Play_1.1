@@ -161,7 +161,7 @@ class StyleView extends Component {
 						/>
 					</StyledPhoto>
 					<ViewText>
-						<Title>당신의 패션 스타일 (유형)은?</Title>
+						<Title>당신의 패션 스타일 유형은?</Title>
 						<p className="name">{this.state.influencer_name}</p>
 						<p className="style">{this.state.style_name}</p>
 						<Description>
