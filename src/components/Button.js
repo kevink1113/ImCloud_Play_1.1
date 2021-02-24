@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom'; //React-Router import
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
+import validator from 'validator';
 
 export const sizes = ['small', 'medium', 'large'];
 
@@ -10,6 +11,7 @@ export const buttonProps = {
 	link: PropTypes.string.isRequired,
 	label: PropTypes.string.isRequired,
 	size: PropTypes.oneOf(sizes),
+	orange: PropTypes.string,
 	disabled: PropTypes.bool,
 };
 
@@ -19,10 +21,10 @@ const ButtonStyle = styled.button`
 	display: inline-block;
 	background-color: rgb(100, 100, 100);
 	border: none;
-	border-radius: 2px;
 	line-height: 1;
 	color: white;
 	transition: color 0.2s, background-color 0.2s;
+
 	&:disabled {
 		cursor: not-allowed;
 		opacity: 0.5;
@@ -35,6 +37,7 @@ const ButtonStyle = styled.button`
 	&.medium {
 		padding: 0.6rem 1rem;
 		font-size: 0.9rem;
+		width: 12.5rem;
 	}
 	&.large {
 		padding: 0.8rem 1.5rem;
@@ -44,12 +47,24 @@ const ButtonStyle = styled.button`
 	&:hover {
 		background-color: ${darken(0.1, 'rgb(100, 100, 100)')};
 	}
+	&#orange {
+		background-color: #ff4500;
+		&:hover {
+			background-color: ${darken(0.1, '#ff4500')};
+		}
+	}
 `;
 
-const Button = ({ link, label, size, disabled }) => {
-	return (
+const Button = ({ link, label, size, orange, disabled }) => {
+	return validator.isURL(link) ? (
+		<a href={link} target="blank">
+			<ButtonStyle className={size} id={orange}>
+				{label}
+			</ButtonStyle>
+		</a>
+	) : (
 		<Link to={link}>
-			<ButtonStyle className={size} disabled={disabled}>
+			<ButtonStyle className={size} id={orange}>
 				{label}
 			</ButtonStyle>
 		</Link>
