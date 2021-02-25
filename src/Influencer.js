@@ -70,7 +70,7 @@ class Influencer extends React.Component {
 				<UpArrow align="center" />
 				{/* 선택했을 때 나오는 불투명 배경 & 내용 */}
 				{/* 여기서부터 본 화면 */}
-				<h1>'{this.state.influencer_name}'님의 스타일</h1>
+				<h1>&apos;{this.state.influencer_name}&apos;님의 스타일</h1>
 				<ListContainer>
 					<InfluencerContainer>
 						{/* img src: props / redux로 전달. 임시로 const 배열 */}

@@ -57,7 +57,7 @@ class NotFamous extends React.Component {
 				},
 				{
 					src: 'http://www.sisaweek.com/news/photo/201801/101902_82854_3639.jpg',
-					influencer_id: 'ssadam',
+					influencer_id: 'hello',
 				},
 				{
 					src:
@@ -89,7 +89,7 @@ class NotFamous extends React.Component {
 				<ImageContainer>
 					{this.state.PhotoData.map((contact, i) => {
 						return (
-							<PhotoContainer alt={contact.influencer_id}>
+							<PhotoContainer key={contact.influencer_id}>
 								<ProfilePhoto
 									src={contact.src}
 									influencer_id={contact.influencer_id}

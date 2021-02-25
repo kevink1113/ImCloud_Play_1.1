@@ -47,6 +47,8 @@ const ViewContainer = styled.div`
 	width: 85%;
 	height: 20%;
 	height: 35rem;
+	max-height: 35vw;
+	min-height: 27rem;
 
 	display: flex;
 	flex-direction: row;
@@ -56,14 +58,18 @@ const ViewContainer = styled.div`
 `;
 
 const ViewText = styled.div`
-	min-width: 34rem;
+	padding-right: 1rem;
+	min-width: 29rem;
 	background: white;
 	padding-left: 6rem;
+	padding-left: 3vw;
 	padding-top: 4rem;
 	width: 100%;
 	.name {
 		font-size: 1.6rem;
 		font-weight: 400;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
 	}
 	.style {
 		color: #ff4500;
@@ -90,6 +96,7 @@ const Title = styled.p`
 	font-weight: 900;
 	margin: 0;
 	margin-bottom: 3rem;
+	margin-bottom: 2.5vw;
 `;
 
 const Follow = styled.div`

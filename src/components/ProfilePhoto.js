@@ -32,8 +32,11 @@ const ProfileImg = styled.img`
 		height: 25rem;
 	}
 	&.large {
-		height: 35rem;
 		width: 35rem;
+		height: 35rem;
+		max-width: 35vw;
+		max-height: 35vw;
+		min-height: 27rem;
 	}
 `;
 

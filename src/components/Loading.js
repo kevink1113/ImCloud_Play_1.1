@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
@@ -42,6 +43,10 @@ const Percent = styled.span`
 	z-index: 1;
 	color: #ff4500;
 `;
+
+export const loadingProps = {
+	percentage: PropTypes.number.isRequired,
+};
 
 class Loading extends Component {
 	constructor(props) {
@@ -89,5 +94,7 @@ class Loading extends Component {
 		);
 	}
 }
+
+Loading.propTypes = loadingProps;
 
 export default Loading;

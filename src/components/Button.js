@@ -55,7 +55,7 @@ const ButtonStyle = styled.button`
 	}
 `;
 
-const Button = ({ link, label, size, orange, disabled }) => {
+const Button = ({ link, label, size, orange }) => {
 	return validator.isURL(link) ? (
 		<a href={link} target="blank">
 			<ButtonStyle className={size} id={orange}>
