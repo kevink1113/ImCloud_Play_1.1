@@ -60,8 +60,7 @@ class NotFamous extends React.Component {
 					influencer_id: 'hello',
 				},
 				{
-					src:
-						'https://lh3.googleusercontent.com/proxy/NSfbPDfXIEOv2mFFgdqGRuZc1uKSFi2lui6FYQ1KB9hmPy5GpI2UdZugWuKGzxpnFhQjO-nuri4Pg-SmJjfzadt1vOVaYi0pLfRc-XYfQOfJdXnR1W9d-NVOWcg',
+					src: 'https://i.pinimg.com/originals/92/82/5e/92825e967cb7cc85da71f119721bcbce.jpg',
 					influencer_id: 'helloworld',
 				},
 				{
@@ -69,8 +68,7 @@ class NotFamous extends React.Component {
 					influencer_id: 'sangwon_1113',
 				},
 				{
-					src:
-						'https://lh3.googleusercontent.com/proxy/Yzu3gcGFPyNfw_5sSOFqQNbGz7GRqx5RirXe2ePmTSQRXRJ979sdpvKz_rVuAXRqN4BFABWEwtbq9VulKxq0jcWJiBt2T-NKuERTOE-sP_V7D4ek1lz_AKkH-0n9Sb6n9dUEmDA',
+					src: 'https://i.pinimg.com/originals/28/4b/98/284b98c3dafb400ccb04135bacdd35aa.jpg',
 					influencer_id: 'sangwon_1113',
 				},
 				{
